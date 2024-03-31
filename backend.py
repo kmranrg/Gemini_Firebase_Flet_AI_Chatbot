@@ -30,18 +30,4 @@ class SmartGurucool():
             self.messages.append({"role": "assistant", "content": response_text})
 
             # returning the response
-            # print("Chatbot:", response_text)
             return response_text
-
-# smart_guru = SmartGurucool()
-
-# print("\n\t\t---------------------------------")
-# print("\n\t\t\t ANURAG SMARTBOT")
-# print("\n\t\t---------------------------------\n\n")
-
-# while True:
-#     user_message = input("You: ")
-#     if user_message.lower() == "quit":
-#         break
-#     smart_guru.SmartGuruResponse(user_message)
-#     print('\n-----------------------------------------------------------------\n')
