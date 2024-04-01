@@ -79,7 +79,7 @@ def main(page: ft.Page):
             page.pubsub.send_all(Message(user_name="SmartGuru", text="SmartGuru is getting the response for you...", message_type="login_message"))
 
             # fetching the SmartGuru AI response
-            ai_response = smart_guru.SmartGuruResponse(str(new_message.value))
+            ai_response = smart_guru.SmartGuruResponse(str(new_message.value), join_user_name.value)
             page.pubsub.send_all(Message("SmartGuru", str(ai_response).lstrip(), message_type="chat_message"))
 
             new_message.value = ""
